@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC03644B25932C9500ECE126 /* WallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC03644A25932C9500ECE126 /* WallTableViewCell.swift */; };
+		EC2B20BC2591EE0A00E25C42 /* PostBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B20BB2591EE0A00E25C42 /* PostBody.swift */; };
+		ECA018F82599713C00C822BF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ECA018F72599713C00C822BF /* Alamofire */; };
 		ECA3BDF92591C8940068D34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BDF82591C8940068D34C /* AppDelegate.swift */; };
 		ECA3BDFB2591C8940068D34C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BDFA2591C8940068D34C /* SceneDelegate.swift */; };
-		ECA3BDFD2591C8940068D34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BDFC2591C8940068D34C /* ViewController.swift */; };
 		ECA3BE002591C8940068D34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3BDFE2591C8940068D34C /* Main.storyboard */; };
 		ECA3BE022591C8960068D34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA3BE012591C8960068D34C /* Assets.xcassets */; };
 		ECA3BE052591C8960068D34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3BE032591C8960068D34C /* LaunchScreen.storyboard */; };
+		ECA3BE0E2591C8FD0068D34C /* WallTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BE0D2591C8FD0068D34C /* WallTableViewController.swift */; };
+		ECA3BE182591CDDE0068D34C /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BE172591CDDE0068D34C /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC03644A25932C9500ECE126 /* WallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallTableViewCell.swift; sourceTree = "<group>"; };
+		EC2B20BB2591EE0A00E25C42 /* PostBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBody.swift; sourceTree = "<group>"; };
 		ECA3BDF52591C8940068D34C /* PostWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA3BDF82591C8940068D34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA3BDFA2591C8940068D34C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECA3BDFC2591C8940068D34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECA3BDFF2591C8940068D34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECA3BE012591C8960068D34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA3BE042591C8960068D34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECA3BE062591C8960068D34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA3BE0D2591C8FD0068D34C /* WallTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallTableViewController.swift; sourceTree = "<group>"; };
+		ECA3BE172591CDDE0068D34C /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA018F82599713C00C822BF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +66,11 @@
 			children = (
 				ECA3BDF82591C8940068D34C /* AppDelegate.swift */,
 				ECA3BDFA2591C8940068D34C /* SceneDelegate.swift */,
-				ECA3BDFC2591C8940068D34C /* ViewController.swift */,
 				ECA3BDFE2591C8940068D34C /* Main.storyboard */,
+				ECA3BE172591CDDE0068D34C /* PostTableViewController.swift */,
+				ECA3BE0D2591C8FD0068D34C /* WallTableViewController.swift */,
+				EC03644A25932C9500ECE126 /* WallTableViewCell.swift */,
+				EC2B20BB2591EE0A00E25C42 /* PostBody.swift */,
 				ECA3BE012591C8960068D34C /* Assets.xcassets */,
 				ECA3BE032591C8960068D34C /* LaunchScreen.storyboard */,
 				ECA3BE062591C8960068D34C /* Info.plist */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = PostWall;
+			packageProductDependencies = (
+				ECA018F72599713C00C822BF /* Alamofire */,
+			);
 			productName = PostWall;
 			productReference = ECA3BDF52591C8940068D34C /* PostWall.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +124,9 @@
 				Base,
 			);
 			mainGroup = ECA3BDEC2591C8940068D34C;
+			packageReferences = (
+				ECA018F62599713C00C822BF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = ECA3BDF62591C8940068D34C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA3BDFD2591C8940068D34C /* ViewController.swift in Sources */,
 				ECA3BDF92591C8940068D34C /* AppDelegate.swift in Sources */,
+				ECA3BE182591CDDE0068D34C /* PostTableViewController.swift in Sources */,
 				ECA3BDFB2591C8940068D34C /* SceneDelegate.swift in Sources */,
+				EC03644B25932C9500ECE126 /* WallTableViewCell.swift in Sources */,
+				EC2B20BC2591EE0A00E25C42 /* PostBody.swift in Sources */,
+				ECA3BE0E2591C8FD0068D34C /* WallTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECA018F62599713C00C822BF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECA018F72599713C00C822BF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECA018F62599713C00C822BF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECA3BDED2591C8940068D34C /* Project object */;
 }
